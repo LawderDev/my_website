@@ -17,6 +17,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "daisyui": "^4.4.19"
+    "daisyui": "^4.4.19",
+    "vue3-lottie": "^3.2.0"
   }
 }
