@@ -127,10 +127,82 @@
       </div>
     </div>
    </div>
-  </div>
 
-  <div class="h-screen  flex flex-col align-center ">
-    <h2 class="text-5xl mt-24 mb-10 text-center">My <span class="text-primary">Project</span></h2>
+   <!-- ABOUT ME -->
+   <div class="h-screen flex flex-col align-center">
+      <h2 class="text-5xl mt-24 mb-10 text-center">How about <span class="text-primary">me</span> ?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
+        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title">My work experience</h3>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">Clip-it.io</h3>
+                <p>Web developper</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">Mink Agency</h3>
+                <p>Web developper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title">My work experience</h3>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">Clip-it.io</h3>
+                <p>Web developper</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">Mink Agency</h3>
+                <p>Web developper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title">My work experience</h3>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">Clip-it.io</h3>
+                <p>Web developper</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">Mink Agency</h3>
+                <p>Web developper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title">My work experience</h3>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">Clip-it.io</h3>
+                <p>Web developper</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">Mink Agency</h3>
+                <p>Web developper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
