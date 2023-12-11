@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen flex flex-col align-center">
-    <h2 class="text-5xl mt-24 mb-10 text-center">
+  <div class="min-h-screen flex flex-col align-center relative z-1">
+    <h2 class="text-5xl mt-24 mb-10 text-center shadow_text">
       How about <span class="text-primary">me</span> ?
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center">
@@ -19,7 +19,10 @@ import AboutSectionCard from "./AboutSectionCard.vue";
 
 const cards = [
   {
-    title: "My work experience",
+    title: {
+      normal: "My ",
+      special: "work experience",
+    },
     items: [
       {
         title: "Clip-it.io",
@@ -32,7 +35,10 @@ const cards = [
     ],
   },
   {
-    title: "My studies",
+    title: {
+      normal: "My ",
+      special: "studies",
+    },
     items: [
       {
         title: "Master degrees of Business Informatics",
@@ -49,7 +55,10 @@ const cards = [
     ],
   },
   {
-    title: "My other passions",
+    title: {
+      normal: "My other ",
+      special: "passions",
+    },
     items: [
       {
         title: "Video games",
@@ -60,10 +69,14 @@ const cards = [
     ],
   },
   {
-    title: "My Story",
+    title: {
+      normal: "My ",
+      special: "story",
+    },
     items: [
       {
         title: "From Reunion Island to Bordeaux",
+        specialTitle: true,
         description: `I’m a huge passionate of computer science, that is why i aspire to become developer.
         
         I quit my beautiful little island to discover new horizon and increase my opportunities.`,

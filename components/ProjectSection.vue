@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen flex flex-col align-center">
-    <h2 class="text-5xl mt-24 mb-10 text-center">
+  <div class="min-h-screen flex flex-col align-center relative z-1">
+    <h2 class="text-5xl mt-24 mb-10 text-center shadow_text">
       My <span class="text-primary">Project</span>
     </h2>
 

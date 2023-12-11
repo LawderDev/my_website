@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-center min-h-screen overflow-clip pt-10">
+    <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
         <div class="w-[353px] hidden lg:flex">
           <Vue3Lottie
             animationLink="/lotties/animate2.json"
@@ -17,8 +17,8 @@
           <img src="/me.svg" alt="me" class="absolute top-20 left-24" />
   
           <div class="relative bottom-14">
-            <h1 class="flex flex-col items-center text-6xl">
-              <span class="text-primary">Ramin Kenny,</span> Developer
+            <h1 class="flex flex-col items-center text-6xl shadow_text">
+              <span class="text-primary">Kenny Ramin,</span> Developer
             </h1>
           </div>
   
@@ -40,3 +40,7 @@
         </div>
       </div>
 </template>
+
+<script setup>
+import { Vue3Lottie } from 'vue3-lottie'
+</script>

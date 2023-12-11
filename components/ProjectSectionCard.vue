@@ -1,5 +1,5 @@
 <template>
-  <div class="card card-compact w-96 bg-base-100 border-[1px] border-[#CAC4D0]">
+  <div class="card card-compact w-96 backdrop-blur-sm border-[1px] drop-shadow shadow-xl">
     <figure>
       <img
         :src="img"
