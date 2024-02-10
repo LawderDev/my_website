@@ -3,14 +3,12 @@
         <div class="w-[353px] hidden lg:flex">
           <Vue3Lottie
             animationLink="/lotties/animate2.json"
-            :height="311"
-            :width="244"
+            :width="300"
           />
         </div>
         <div class="relative">
           <Vue3Lottie
             animationLink="/lotties/animate.json"
-            :height="512"
             :width="512"
           />
   
@@ -34,8 +32,7 @@
           <Vue3Lottie
             class="hidden lg:flex"
             animationLink="/lotties/animate3.json"
-            :height="500"
-            :width="353"
+            :width="400"
           />
         </div>
       </div>

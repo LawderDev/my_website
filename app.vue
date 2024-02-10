@@ -7,7 +7,7 @@
       muted
       @ended="removeFadeOutVideo($event)"
     >
-      <source src="/background2.mp4" type="video/mp4" />
+      <source src="/bg.webm" type="video/mp4" />
     </video>
 
     <!-- <NuxtWelcome /> -->
@@ -26,16 +26,14 @@
 
 <script setup>
 const state = reactive({
-  mode: "light",
+  mode: "myLightTheme",
 });
 
 const changeMode = () => {
-  state.mode = state.mode === "light" ? "dark" : "light";
+  state.mode = state.mode === "myLightTheme" ? "myDarkTheme" : "myLightTheme";
 };
 
 const removeFadeOutVideo = (event) => {
-  console.log("enterrrrr");
-  console.log(event);
   // Get the HTMLMediaElement object for the video
   const videoElement = event.target;
 
@@ -54,6 +52,11 @@ const removeFadeOutVideo = (event) => {
 </script>
 
 <style>
+
+[data-theme="myDarkTheme"] #background-video {
+  filter: invert(0.9) !important;
+}
+
 #background-video {
   height: 100vh;
   opacity: 1;

@@ -13,6 +13,10 @@
         :title="project.title"
         :description="project.description"
         :img="project.img"
+        :link="project.link"
+        :github="project.github"
+        :stack="project.stack"
+        @click-on-open-modal="state.isOpen = !state.isOpen"
       >
       </ProjectSectionCard>
     </div>
@@ -20,21 +24,39 @@
 </template>
 
 <script setup>
+const state = reactive({
+  isOpen: false,
+});
+
 const projects = [
   {
-    title: "Shoes",
-    description: "If a dog chews shoes whose shoes does he choose?",
-    img: "https://images.assetsdelivery.com/compings_v2/kapona/kapona2111/kapona211100019.jpg",
+    title: "Old website",
+    description: "Ancien site web personnel",
+    img: "/projects/website.png",
+    link: "https://raminkenny.netlify.app/",
+    github: "https://github.com/LawderDev/ramin_kenny_website/",
+    stack: "Nuxt.js, Tailwindcss, Strapi, MongoDB"
   },
   {
-    title: "Shoes",
-    description: "If a dog chews shoes whose shoes does he choose?",
-    img: "https://images.assetsdelivery.com/compings_v2/kapona/kapona2111/kapona211100019.jpg",
+    title: "IGDB App",
+    description: "Site web de gestion de jeux vidéos",
+    img: "/projects/igdb_app.png",
+    github: "https://github.com/LawderDev/IGDB_project/",
+    stack: "Vue.js, Tailwindcss, Express.js, MongoDB"
   },
   {
-    title: "Shoes",
-    description: "If a dog chews shoes whose shoes does he choose?",
-    img: "https://images.assetsdelivery.com/compings_v2/kapona/kapona2111/kapona211100019.jpg",
+    title: "Image in dragon",
+    description: "Application web de traitement d'images ",
+    img: "/projects/image_in_dragon.png",
+    github: "https://github.com/LawderDev/Projet_traitement_d_image/",
+    stack: "Vue.js, SpringBoot"
+  },
+  {
+    title: "Water consumption",
+    description: "Application permettant aux utilisateurs de suivre leur consommation quotidienne d'eau",
+    img: "/projects/water.png",
+    github: "https://github.com/LawderDev/Mobile_water_consumption_project",
+    stack: "Android Studio, SQLite"
   },
   
 ];
