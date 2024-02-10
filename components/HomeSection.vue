@@ -16,7 +16,7 @@
   
           <div class="relative bottom-14">
             <h1 class="flex flex-col items-center text-6xl shadow_text">
-              <span class="text-primary">Kenny Ramin,</span> Developer
+              <span class="text-primary">Kenny Ramin,</span> Développeur
             </h1>
           </div>
   

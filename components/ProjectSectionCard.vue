@@ -14,7 +14,7 @@
       <p v-if="link"><span class="font-bold">Link: </span><a :href="link" class="text-primary underline">Voir le site web</a></p>
       <p><span class="font-bold">Github: </span><a class="text-primary underline" :href="github">Voir la page github</a></p>
       <div class="card-actions justify-center">
-        <button class="btn btn-primary" @click="link ? openWebsite(link) : openWebsite(github)">See more</button>
+        <button class="btn animate-bounce-custom btn-primary" @click="link ? openWebsite(link) : openWebsite(github)">Voir plus ...</button>
       </div>
     </div>
   </div>

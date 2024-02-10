@@ -48,16 +48,16 @@
     <div class="navbar-end hidden lg:flex">
       <ul class="menu menu-horizontal px-1 text-md">
         <li>
-          <a class="hover:text-primary animate-link" href="#"> Home </a>
+          <a class="hover:text-primary animate-link" href="#"> Accueil </a>
         </li>
         <li>
           <a class="hover:text-primary animate-link" href="#project-section"
-            >My project</a
+            >Mes réalisations</a
           >
         </li>
         <li>
           <a class="hover:text-primary animate-link" href="#about-section"
-            >About me</a
+            >À propos</a
           >
         </li>
         <li>
@@ -67,14 +67,12 @@
         </li>
       </ul>
 
-      <a class="btn btn-primary text-md">Get my Resume</a>
+      <a class="btn animate-bounce-custom btn-primary text-md" href="/resume.pdf" download>Obtenir mon CV</a>
       <label class="swap swap-rotate ml-4">
-        <!-- this hidden checkbox controls the state -->
         <input type="checkbox" @click="$emit('toggleChangeMode')" />
 
-        <!-- sun icon -->
         <svg
-          class="swap-on fill-current w-10 h-10"
+          class="swap-on fill-current w-10 h-10 hover:animate-[pulse_1.15s_ease-in-out_infinite]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -83,9 +81,8 @@
           />
         </svg>
 
-        <!-- moon icon -->
         <svg
-          class="swap-off fill-current w-10 h-10"
+          class="swap-off fill-current w-10 h-10 hover:animate-[pulse_1.15s_ease-in-out_infinite]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

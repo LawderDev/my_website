@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col align-center relative z-1">
     <h2 class="text-5xl mt-24 mb-10 text-center shadow_text">
-      My <span class="text-primary">Project</span>
+      Mes <span class="text-primary">Projets</span>
     </h2>
 
     <div
@@ -30,7 +30,7 @@ const state = reactive({
 
 const projects = [
   {
-    title: "Old website",
+    title: "Ancien site web",
     description: "Ancien site web personnel",
     img: "/projects/website.png",
     link: "https://raminkenny.netlify.app/",
@@ -52,7 +52,7 @@ const projects = [
     stack: "Vue.js, SpringBoot"
   },
   {
-    title: "Water consumption",
+    title: "Suivi de consommation d'eau",
     description: "Application permettant aux utilisateurs de suivre leur consommation quotidienne d'eau",
     img: "/projects/water.png",
     github: "https://github.com/LawderDev/Mobile_water_consumption_project",

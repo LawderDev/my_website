@@ -1,26 +1,34 @@
 <template>
-  <div :data-theme="state.mode" class="font-raleway">
-    <video
-      id="background-video"
-      class="fadeIn z-0"
-      autoplay
-      muted
-      @ended="removeFadeOutVideo($event)"
-    >
-      <source src="/bg.webm" type="video/mp4" />
-    </video>
+  <div :data-theme="state.mode" class="font-raleway main-div">
+    <header>
+      <video
+        id="background-video"
+        class="fadeIn z-0 w-[100vw] h-[100vh]"
+        autoplay
+        muted
+        @ended="removeFadeOutVideo($event)"
+      >
+        <source src="/bg.webm" type="video/mp4" />
+      </video>
 
-    <!-- <NuxtWelcome /> -->
-    <NavBar @toggleChangeMode="changeMode"></NavBar>
-    <!-- <Navtest></Navtest> -->
+      <!-- <NuxtWelcome /> -->
+      <NavBar @toggleChangeMode="changeMode"></NavBar>
+      <!-- <Navtest></Navtest> -->
 
-    <HomeSection id="home-section"></HomeSection>
+      <HomeSection id="home-section"></HomeSection>
+    </header>
 
-    <ProjectSection id="project-section"></ProjectSection>
+    <main>
+      <ProjectSection id="project-section"></ProjectSection>
 
-    <AboutSection id="about-section"></AboutSection>
+      <AboutSection id="about-section"></AboutSection>
 
-    <ContactButton id="contact-section"></ContactButton>
+      <ContactButton id="contact-section"></ContactButton>
+    </main>
+
+    <footer>
+     <FooterSection></FooterSection>
+    </footer>
   </div>
 </template>
 
@@ -52,6 +60,9 @@ const removeFadeOutVideo = (event) => {
 </script>
 
 <style>
+.main-div {
+  overflow: hidden;
+}
 
 [data-theme="myDarkTheme"] #background-video {
   filter: invert(0.9) !important;
@@ -79,6 +90,10 @@ const removeFadeOutVideo = (event) => {
 }
 
 html {
-  scroll-behavior: smooth;
+ @apply scroll-smooth;
+}
+
+.animate-bounce-custom {
+  @apply hover:animate-[pulse_1.15s_ease-in-out_infinite] ;
 }
 </style>

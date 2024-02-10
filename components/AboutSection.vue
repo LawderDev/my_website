@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col align-center relative z-1">
     <h2 class="text-5xl mt-24 mb-10 text-center shadow_text">
-      How about <span class="text-primary">me</span> ?
+      À propos de <span class="text-primary">moi</span> ?
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center">
       <AboutSectionCard
@@ -20,14 +20,14 @@ import AboutSectionCard from "./AboutSectionCard.vue";
 const cards = [
   {
     title: {
-      normal: "My ",
-      special: "work experience",
+      normal: "Mon ",
+      special: "expérience professionnelle",
     },
     items: [
       {
         title: "Clip-it.io",
         specialTitle: true,
-        description: "Web developper",
+        description: "Développeur web",
         date: "2022 - 2024",
         stack: "Vue.js, Django, PostgreSQL, ExtendScript, Node.js, Webflow, Polaris, AWS",
         missions: [
@@ -41,8 +41,8 @@ const cards = [
       {
         title: "Mink Agency",
         specialTitle: true,
-        description: "Web developper",
-        date: "2021 (3 month)",
+        description: "Développeur web",
+        date: "2021 (2 mois)",
         stack: "Vue.js, Tailwindcss, Laravel",
         missions: [
           "Développement d'une plateforme SaaS de gestion de projet et de planning."
@@ -52,33 +52,33 @@ const cards = [
   },
   {
     title: {
-      normal: "My ",
-      special: "studies",
+      normal: "Mes ",
+      special: "études",
     },
     items: [
       {
-        title: "Master degrees of Business Informatics",
+        title: "Master MIAGE Sciences du Numérique et Management",
         specialTitle: true,
-        description: "University of Bordeaux",
+        description: "Université de Bordeaux",
         date: "2022 - 2024"
       },
       {
-        title: "Bachelor degrees of Computer Science",
+        title: "Licence informatique",
         specialTitle: true,
-        description: "University of Bordeaux",
+        description: "Université de Bordeaux",
         date: "2021 - 2022"
       },
       {
-        title: "BTEC Higher National Diploma of Computer Science",
+        title: "DUT informatique",
         specialTitle: true,
-        description: "University of Bordeaux",
+        description: "Université de Bordeaux",
         date: "2019 - 2021"
       },
     ],
   },
   {
     title: {
-      normal: "My other ",
+      normal: "Mes autres ",
       special: "passions",
     },
     items: [
@@ -95,16 +95,16 @@ const cards = [
   },
   {
     title: {
-      normal: "My ",
-      special: "story",
+      normal: "Mon ",
+      special: "histoire",
     },
     items: [
       {
-        title: "From Reunion Island to Bordeaux",
+        title: "De l'île de la Réunion à Bordeaux",
         specialTitle: true,
-        description: `I’m a huge passionate of computer science, that is why i aspire to become developer.
+        description: `Je suis un passionné d'informatique depuis mon plus jeune âge, c'est pourquoi je me suis orienté vers le métier de développeur.
         
-        I quit my beautiful little island to discover new horizon and increase my opportunities.`,
+        J'ai quitté mon île pour étudier, découvrir de nouveaux horizons et avoir de meilleures opportunités professionnelles.`,
       },
     ],
   },
