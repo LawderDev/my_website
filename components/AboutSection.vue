@@ -29,6 +29,7 @@ const cards = [
         specialTitle: true,
         description: "Web developper",
         date: "2022 - 2024",
+        stack: "Vue.js, Django, PostgreSQL, ExtendScript, Node.js, Webflow, Polaris, AWS",
         missions: [
           "Développement d'une plateforme SaaS pour un outil d’automatisation de vidéo.",
           "Ajout de fonctionnalités et correction de bugs sur une api de génération de vidéos.",
@@ -42,6 +43,7 @@ const cards = [
         specialTitle: true,
         description: "Web developper",
         date: "2021 (3 month)",
+        stack: "Vue.js, Tailwindcss, Laravel",
         missions: [
           "Développement d'une plateforme SaaS de gestion de projet et de planning."
         ]
