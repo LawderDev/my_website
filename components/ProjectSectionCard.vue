@@ -1,5 +1,5 @@
 <template>
-  <div class="card card-compact w-96 backdrop-blur-sm border-[1px] border-base-100 drop-shadow shadow-xl">
+  <div class="card card-compact w-96 lg:w-[23vw] backdrop-blur-sm border-[1px] border-base-100 drop-shadow shadow-xl">
     <figure>
       <img
         :src="img"
@@ -36,4 +36,3 @@ const openWebsite = (url) => {
   window.open(url);
 }
 </script>
-  

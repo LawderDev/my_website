@@ -1,5 +1,5 @@
 <template>
-  <div class="card card-compact w-[450px] backdrop-blur-sm border-[1px] border-base-100 drop-shadow shadow-xl">
+  <div class="card card-compact w-96 lg:w-[40vw] backdrop-blur-sm border-[1px] border-base-100 drop-shadow shadow-xl">
     <div class="card-body">
       <h3 class="text-2xl text-center py-8 font-bold">{{ title.normal }} <span class="text-primary">{{ title.special }}</span></h3>
       
