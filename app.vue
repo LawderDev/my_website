@@ -11,20 +11,25 @@
         <source src="/bg.webm" type="video/mp4" />
       </video>
 
-      <!-- <NuxtWelcome /> -->
       <NavBar @toggleChangeMode="changeMode"></NavBar>
-      <!-- <Navtest></Navtest> -->
-
-      <HomeSection id="home-section"></HomeSection>
+      
+      <ClientOnly>
+        <HomeSection data-aos="slide-up" id="home-section"></HomeSection>
+      </ClientOnly>
     </header>
 
-    <main>
-      <ProjectSection id="project-section"></ProjectSection>
+      <main>
+        <ClientOnly>
+          <ProjectSection data-aos="slide-up" id="project-section"></ProjectSection>
+        </ClientOnly>
+        <ClientOnly>
+          <AboutSection data-aos="slide-up" id="about-section"></AboutSection>
+        </ClientOnly>
+        <ClientOnly>
+          <ContactButton data-aos="slide-up" id="contact-section"></ContactButton>
+        </ClientOnly>
+      </main>
 
-      <AboutSection id="about-section"></AboutSection>
-
-      <ContactButton id="contact-section"></ContactButton>
-    </main>
 
     <footer>
      <FooterSection></FooterSection>

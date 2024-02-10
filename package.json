@@ -13,12 +13,13 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.10.1",
     "nuxt": "^3.8.2",
-    "nuxt-aos": "^1.2.2",
     "vue": "^3.3.10",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "daisyui": "^4.4.19",
+    "lodash.debounce": "^4.0.8",
     "vue3-lottie": "^3.2.0"
   }
 }
