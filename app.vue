@@ -33,6 +33,7 @@
 </template>
 
 <script setup>
+
 const state = reactive({
   mode: "myLightTheme",
 });

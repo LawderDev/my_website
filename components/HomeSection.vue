@@ -2,13 +2,13 @@
     <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
         <div class="w-[353px] hidden lg:flex">
           <Vue3Lottie
-            animationLink="/lotties/animate2.json"
+            :animationData="animate2"
             :width="300"
           />
         </div>
         <div class="relative">
           <Vue3Lottie
-            animationLink="/lotties/animate.json"
+            :animationData="animate"
             :width="512"
           />
   
@@ -22,7 +22,7 @@
   
           <Vue3Lottie
             class="relative bottom-14"
-            animationLink="/lotties/next.json"
+            :animationData="nextAnimation"
             :height="150"
             :width="150"
           />
@@ -31,7 +31,7 @@
         <div>
           <Vue3Lottie
             class="hidden lg:flex"
-            animationLink="/lotties/animate3.json"
+            :animationData="animate3"
             :width="400"
           />
         </div>
@@ -40,4 +40,8 @@
 
 <script setup>
 import { Vue3Lottie } from 'vue3-lottie'
+import animate from '~/assets/lotties/animate.json'
+import animate2 from '~/assets/lotties/animate2.json'
+import animate3 from '~/assets/lotties/animate3.json'
+import nextAnimation from '~/assets/lotties/next.json'
 </script>
