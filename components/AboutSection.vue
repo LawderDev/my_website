@@ -26,11 +26,25 @@ const cards = [
     items: [
       {
         title: "Clip-it.io",
+        specialTitle: true,
         description: "Web developper",
+        date: "2022 - 2024",
+        missions: [
+          "Développement d'une plateforme SaaS pour un outil d’automatisation de vidéo.",
+          "Ajout de fonctionnalités et correction de bugs sur une api de génération de vidéos.",
+          "Créations de scripts after effects.",
+          "Développement d’un plugin Shopify d’automatisation de vidéos.",
+          "Développement de pages d’atterrissage publicitaire."
+        ]
       },
       {
         title: "Mink Agency",
+        specialTitle: true,
         description: "Web developper",
+        date: "2021 (3 month)",
+        missions: [
+          "Développement d'une plateforme SaaS de gestion de projet et de planning."
+        ]
       },
     ],
   },
@@ -42,15 +56,21 @@ const cards = [
     items: [
       {
         title: "Master degrees of Business Informatics",
+        specialTitle: true,
         description: "University of Bordeaux",
+        date: "2022 - 2024"
       },
       {
         title: "Bachelor degrees of Computer Science",
+        specialTitle: true,
         description: "University of Bordeaux",
+        date: "2021 - 2022"
       },
       {
         title: "BTEC Higher National Diploma of Computer Science",
+        specialTitle: true,
         description: "University of Bordeaux",
+        date: "2019 - 2021"
       },
     ],
   },
@@ -65,6 +85,9 @@ const cards = [
       },
       {
         title: "Music",
+      },
+      {
+        title: "Cooking",
       },
     ],
   },
