@@ -2,12 +2,14 @@
     <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
         <div v-if="isDesktop" class="w-[353px] hidden lg:flex" data-aos="slide-left">
           <Vue3Lottie
+            renderer="svg"
             :animationData="animate2"
             :width="300"
           />
         </div>
         <div class="relative" data-aos="fade-up">
           <Vue3Lottie
+            renderer="svg"  
             :animationData="animate"
             :width="512"
           />
@@ -22,6 +24,7 @@
   
           <Vue3Lottie
             class="relative bottom-14"
+            renderer="svg"
             :animationData="nextAnimation"
             :height="150"
             :width="150"
@@ -31,6 +34,7 @@
         <div>
           <Vue3Lottie
             v-if="isDesktop"
+            renderer="svg"
             class="hidden lg:flex"
             data-aos="slide-right"
             :animationData="animate3"
