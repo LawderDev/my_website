@@ -8,7 +8,7 @@
         muted
         @ended="removeFadeOutVideo($event)"
       >
-        <source src="/bg.webm" type="video/mp4" />
+        <source src="/bg.webm" type="video/webm" />
       </video>
 
       <NavBar @toggleChangeMode="changeMode"></NavBar>
