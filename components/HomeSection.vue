@@ -1,16 +1,8 @@
 <template>
     <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
         <div class="w-[353px] hidden lg:flex" data-aos="slide-left">
-          <Vue3Lottie
-            :animationData="animate2"
-            :width="300"
-          />
         </div>
         <div class="relative" data-aos="fade-up">
-          <Vue3Lottie
-            :animationData="animate"
-            :width="512"
-          />
   
           <img src="/me.svg" alt="me" class="absolute top-20 left-24" />
   
@@ -20,21 +12,9 @@
             </h1>
           </div>
   
-          <Vue3Lottie
-            class="relative bottom-14"
-            :animationData="nextAnimation"
-            :height="150"
-            :width="150"
-          />
         </div>
   
         <div>
-          <Vue3Lottie
-            class="hidden lg:flex"
-            data-aos="slide-right"
-            :animationData="animate3"
-            :width="400"
-          />
         </div>
       </div>
 </template>
