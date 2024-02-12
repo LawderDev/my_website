@@ -1,38 +1,30 @@
 <template>
   <div :data-theme="state.mode" class="font-raleway main-div">
     <header>
-      <video
-        id="background-video"
-        class="fadeIn z-0 w-[100vw] h-[100vh]"
-        autoplay
-        muted
-        @ended="removeFadeOutVideo($event)"
-      >
-        <source src="/bg.webm" type="video/webm" />
-      </video>
 
-      <NavBar @toggleChangeMode="changeMode"></NavBar>
+      <Background></Background>  
+
+      <NavBar @toggleChangeMode="changeMode" data-aos="fade-down"></NavBar>
       
       <ClientOnly>
-        <HomeSection data-aos="slide-up" id="home-section"></HomeSection>
+        <HomeSection id="home-section"></HomeSection>
       </ClientOnly>
     </header>
 
       <main>
         <ClientOnly>
-          <ProjectSection data-aos="slide-up" id="project-section"></ProjectSection>
+          <ProjectSection id="project-section"></ProjectSection>
         </ClientOnly>
         <ClientOnly>
-          <AboutSection data-aos="slide-up" id="about-section"></AboutSection>
+          <AboutSection data-aos="zoom-out-up" id="about-section"></AboutSection>
         </ClientOnly>
         <ClientOnly>
-          <ContactButton data-aos="slide-up" id="contact-section"></ContactButton>
+          <ContactButton data-aos="fade-down" id="contact-section"></ContactButton>
         </ClientOnly>
       </main>
 
-
     <footer>
-     <FooterSection></FooterSection>
+     <FooterSection data-aos="fade-up"></FooterSection>
     </footer>
   </div>
 </template>

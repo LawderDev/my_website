@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col align-center relative z-1">
-    <h2 class="text-5xl mt-24 mb-10 text-center shadow_text">
+    <h2 class="text-5xl mt-24 mb-10 text-center shadow_text" data-aos="fade-up">
       Mes <span class="text-primary">Projets</span>
     </h2>
 
@@ -8,7 +8,8 @@
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center"
     >
       <ProjectSectionCard
-        v-for="project in projects"
+        v-for="(project, index) in projects"
+        :data-aos="getFlipAnimation(index)"
         :key="project.title"
         :title="project.title"
         :description="project.description"
@@ -60,4 +61,14 @@ const projects = [
   },
   
 ];
+
+const getFlipAnimation = (index) => {
+    if (index % 2 === 0) {
+      return "flip-up";
+    } else if (index % 3 === 0) {
+      return "flip-left";
+    } else {
+      return "flip-right";
+    }
+}
 </script>

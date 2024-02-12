@@ -1,12 +1,12 @@
 <template>
     <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
-        <div class="w-[353px] hidden lg:flex">
+        <div class="w-[353px] hidden lg:flex" data-aos="slide-left">
           <Vue3Lottie
             :animationData="animate2"
             :width="300"
           />
         </div>
-        <div class="relative">
+        <div class="relative" data-aos="fade-up">
           <Vue3Lottie
             :animationData="animate"
             :width="512"
@@ -31,6 +31,7 @@
         <div>
           <Vue3Lottie
             class="hidden lg:flex"
+            data-aos="slide-right"
             :animationData="animate3"
             :width="400"
           />
