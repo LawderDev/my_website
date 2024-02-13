@@ -4,7 +4,7 @@
             <DotLottieVue
               autoplay
               loop
-              :src="animate2"
+              src="/lotties/animate2.lottie"
               class="w-[300] h-[300px]"
             />
         </div>
@@ -12,7 +12,7 @@
           <DotLottieVue
               autoplay
               loop
-              :src="animate"
+              src="/lotties/animate.lottie"
               class="w-[512px] h-[512px]"
               style="width:512px"
             />
@@ -26,7 +26,7 @@
           <DotLottieVue
               autoplay
               loop
-              :src="next"
+              src="/lotties/next.lottie"
               class="relative bottom-14 w-[150px] h-[150px] left-48"
             />
         </div>
@@ -35,7 +35,7 @@
           <DotLottieVue
               autoplay
               loop
-              :src="animate3"
+              src="/lotties/animate3.lottie"
               class="w-[400px] h-[400px]"
             />
         </div>
