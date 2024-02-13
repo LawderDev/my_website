@@ -44,7 +44,6 @@
 
 <script setup>
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
-import MeSvg from './svgs/MeSvg.vue';
 
 const viewport = useViewport();
 </script>
