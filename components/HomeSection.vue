@@ -15,7 +15,7 @@
           <canvas ref="lottieNext" class="w-[150px] h-[150px] relative bottom-14 left-48"></canvas>
         </div>
   
-        <div v-if="isDesktop" data-aos="slide-right">
+        <div v-if="isDesktop" data-aos="slide-right" class="hidden lg:flex">
           <canvas ref="lottieAnimate3" class="w-[400px] h-[400px] relative"></canvas>
         </div>
       </div>
