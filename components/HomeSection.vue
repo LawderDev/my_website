@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
-        <div v-if="isDesktop" class="w-[353px] hidden lg:flex" data-aos="slide-left">
+        <div v-if="viewport.isGreaterOrEquals('desktop')" class="w-[353px]" data-aos="slide-left">
             <DotLottieVue
               autoplay
               loop
@@ -31,7 +31,7 @@
             />
         </div>
   
-        <div v-if="isDesktop" data-aos="slide-right" class="hidden lg:flex">
+        <div v-if="viewport.isGreaterOrEquals('desktop')" data-aos="slide-right">
           <DotLottieVue
               autoplay
               loop
@@ -44,52 +44,6 @@
 
 <script setup>
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
-/*import { DotLottie } from "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js";
-const lottieAnimate = ref(null)
-const lottieAnimate2 = ref(null)
-const lottieAnimate3 = ref(null)
-const lottieNext = ref(null)
 
-const initLotties = () => {
-  new DotLottie({
-	  canvas: lottieAnimate.value,
-	  src: "/lotties/animate.lottie",
-	  loop: true,
-	  autoplay: true
-	});
-
-  new DotLottie({
-	  canvas: lottieNext.value,
-	  src: "/lotties/next.lottie",
-	  loop: true,
-	  autoplay: true
-	});
-}
-
-const initConditionalLotties = () => {
-  if(lottieAnimate2.value){
-    new DotLottie({
-	  canvas: lottieAnimate2.value,
-	  src: "/lotties/animate2.lottie",
-	  loop: true,
-	  autoplay: true
-	});
-  }
-
-  if(lottieAnimate3.value){
-    new DotLottie({
-	  canvas: lottieAnimate3.value,
-	  src: "/lotties/animate3.lottie",
-	  loop: true,
-	  autoplay: true
-	});
-  }
-}
-
-onMounted(() => {
-  initLotties()
-  initConditionalLotties()
-})*/
-
-const isDesktop = window.matchMedia('(min-width: 1024px)').matches
+const viewport = useViewport();
 </script>
