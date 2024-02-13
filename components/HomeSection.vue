@@ -4,7 +4,7 @@
             <DotLottieVue
               autoplay
               loop
-              useFrameInterpolation="false"
+              :useFrameInterpolation="false"
               src="/lotties/animate2.lottie"
               class="w-[300] h-[300px]"
             />
@@ -14,11 +14,11 @@
               autoplay
               loop
               src="/lotties/animate.lottie"
-              useFrameInterpolation="false"
+              :useFrameInterpolation="false"
               class="w-[512px] h-[512px]"
               style="width:512px"
             />
-          <img src="/me.svg" alt="me" class="absolute top-20 left-24" />
+            <MeSvgComponent class="absolute top-20 left-24"></MeSvgComponent>
   
           <div class="relative bottom-14">
             <h1 class="flex flex-col items-center text-6xl shadow_text">
@@ -29,7 +29,7 @@
               autoplay
               loop
               src="/lotties/next.lottie"
-              useFrameInterpolation="false"
+              :useFrameInterpolation="false"
               class="relative bottom-14 w-[150px] h-[150px] left-48"
             />
         </div>
@@ -39,7 +39,7 @@
               autoplay
               loop
               src="/lotties/animate3.lottie"
-              useFrameInterpolation="false"
+              :useFrameInterpolation="false"
               class="w-[400px] h-[400px]"
             />
         </div>
