@@ -4,9 +4,8 @@
 
       <Background></Background>  
 
-      <NavBar @toggleChangeMode="changeMode"></NavBar>
-      
       <ClientOnly>
+        <NavBar @toggleChangeMode="changeMode"></NavBar>
         <HomeSection id="home-section"></HomeSection>
       </ClientOnly>
     </header>
@@ -14,17 +13,15 @@
       <main>
         <ClientOnly>
           <ProjectSection id="project-section"></ProjectSection>
-        </ClientOnly>
-        <ClientOnly>
           <AboutSection data-aos="zoom-out-up" id="about-section"></AboutSection>
-        </ClientOnly>
-        <ClientOnly>
           <ContactButton data-aos="fade-down" id="contact-section"></ContactButton>
         </ClientOnly>
       </main>
 
     <footer>
-     <FooterSection></FooterSection>
+      <ClientOnly>
+        <FooterSection></FooterSection>
+      </ClientOnly>
     </footer>
   </div>
 </template>
@@ -38,49 +35,11 @@ const state = reactive({
 const changeMode = () => {
   state.mode = state.mode === "myLightTheme" ? "myDarkTheme" : "myLightTheme";
 };
-
-const removeFadeOutVideo = (event) => {
-  // Get the HTMLMediaElement object for the video
-  const videoElement = event.target;
-
-  // Fade out the video
-  videoElement.style.opacity = 0;
-
-  setTimeout(() => {
-    videoElement.play();
-
-    // Fade in the video after 2 seconds
-    setTimeout(() => {
-      videoElement.style.opacity = 1;
-    }, 1000);
-  }, 1000);
-};
 </script>
 
 <style>
 .main-div {
   overflow: hidden;
-}
-
-[data-theme="myDarkTheme"] #background-video {
-  filter: invert(0.9) !important;
-}
-
-#background-video {
-  height: 100vh;
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  width: 100vw;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 
 .shadow_text {
