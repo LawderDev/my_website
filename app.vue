@@ -4,10 +4,10 @@
 
       <Background></Background>  
 
-      <ClientOnly>
         <NavBar @toggleChangeMode="changeMode"></NavBar>
-        <HomeSection id="home-section"></HomeSection>
-      </ClientOnly>
+        <ClientOnly>
+          <HomeSection id="home-section"></HomeSection>
+        </ClientOnly>
     </header>
 
       <main>
@@ -19,9 +19,7 @@
       </main>
 
     <footer>
-      <ClientOnly>
         <FooterSection></FooterSection>
-      </ClientOnly>
     </footer>
   </div>
 </template>
