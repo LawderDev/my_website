@@ -4,7 +4,7 @@
 
       <Background></Background>  
 
-        <NavBar @toggleChangeMode="changeMode"></NavBar>
+        <NavBar data-aos="fade-down" @toggleChangeMode="changeMode"></NavBar>
 
         <HomeSection id="home-section"></HomeSection>
     </header>
@@ -16,7 +16,7 @@
       </main>
 
     <footer>
-        <FooterSection data-aos="fade-up" ></FooterSection>
+        <FooterSection></FooterSection>
     </footer>
   </div>
 </template>
