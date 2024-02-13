@@ -4,17 +4,17 @@
             <DotLottieVue
               autoplay
               loop
+              :src="animate2"
               class="w-[300] h-[300px]"
-              src="/lotties/animate2.lottie"
             />
         </div>
         <div class="relative" data-aos="fade-up">
           <DotLottieVue
               autoplay
               loop
+              :src="animate"
               class="w-[512px] h-[512px]"
               style="width:512px"
-              src="/lotties/animate.lottie"
             />
           <img src="/me.svg" alt="me" class="absolute top-20 left-24" />
   
@@ -26,8 +26,8 @@
           <DotLottieVue
               autoplay
               loop
+              :src="next"
               class="relative bottom-14 w-[150px] h-[150px] left-48"
-              src="/lotties/next.lottie"
             />
         </div>
   
@@ -35,8 +35,8 @@
           <DotLottieVue
               autoplay
               loop
+              :src="animate3"
               class="w-[400px] h-[400px]"
-              src="/lotties/animate3.lottie"
             />
         </div>
       </div>
@@ -44,6 +44,29 @@
 
 <script setup>
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
+import animate from '~/assets/lotties/animate.lottie';
+import animate2 from '~/assets/lotties/animate2.lottie';
+import animate3 from '~/assets/lotties/animate3.lottie';
+import next from '~/assets/lotties/next.lottie';
+import axios from 'axios';
+
+/*const lottieBuffers = reactive([]);
+
+const getLottieBuffers = async () => {
+  const lottieFiles = await axios.get('../assets/lotties');
+
+  const lotties = await Promise.all(
+    lottieFiles.data.map(async (fileName) => {
+      const filePath = `/assets/lotties/${fileName}`;
+      const response = await axios.get(filePath, { responseType: 'arraybuffer' });
+      return response.data;
+    })
+  );
+
+  return lotties;
+}
+
+lottieBuffers.value = await getLottieBuffers()*/
 
 const viewport = useViewport();
 </script>

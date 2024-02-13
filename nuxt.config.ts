@@ -2,4 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', 'nuxt-viewport'],
+  vite: {
+    assetsInclude: ['**/*.lottie'],
+    // ... other build options
+  },
 })
