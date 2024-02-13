@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
-  tailwindcss: {
-    purge: true,
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => ['dotlottie-player'].includes(tag),
+    },
   },
 })
