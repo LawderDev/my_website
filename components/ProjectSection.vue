@@ -1,25 +1,29 @@
 <template>
   <div class="min-h-screen flex flex-col align-center relative z-1">
-    <h2 class="text-5xl mt-24 mb-10 text-center shadow_text" data-aos="fade-up">
-      Mes <span class="text-primary">Projets</span>
-    </h2>
+    <ClientOnly>
+      <h2 class="text-5xl mt-24 mb-10 text-center shadow_text" data-aos="fade-up">
+        Mes <span class="text-primary">Projets</span>
+      </h2>
+    </ClientOnly>
 
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center"
     >
-      <ProjectSectionCard
-        v-for="(project, index) in projects"
-        :data-aos="getFlipAnimation(index)"
-        :key="project.title"
-        :title="project.title"
-        :description="project.description"
-        :img="project.img"
-        :link="project.link"
-        :github="project.github"
-        :stack="project.stack"
-        @click-on-open-modal="state.isOpen = !state.isOpen"
-      >
-      </ProjectSectionCard>
+      <ClientOnly>
+        <ProjectSectionCard
+          v-for="(project, index) in projects"
+          :data-aos="getFlipAnimation(index)"
+          :key="project.title"
+          :title="project.title"
+          :description="project.description"
+          :img="project.img"
+          :link="project.link"
+          :github="project.github"
+          :stack="project.stack"
+          @click-on-open-modal="state.isOpen = !state.isOpen"
+        >
+        </ProjectSectionCard>
+      </ClientOnly>
     </div>
   </div>
 </template>
