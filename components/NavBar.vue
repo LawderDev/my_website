@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar fixed backdrop-blur z-10 shadow-xl">
+  <div data-aos="fade-down" class="navbar fixed backdrop-blur z-10 shadow-xl">
     <div class="navbar-start">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" v-model="isDrawerOpen" />
       <div class="drawer-content">

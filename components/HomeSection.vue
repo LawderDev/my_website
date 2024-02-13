@@ -4,7 +4,6 @@
             <DotLottieVue
               autoplay
               loop
-              :useFrameInterpolation="true"
               src="/lotties/animate2.lottie"
               class="w-[300] h-[300px]"
             />
@@ -14,7 +13,6 @@
               autoplay
               loop
               src="/lotties/animate.lottie"
-              :useFrameInterpolation="true"
               class="w-[512px] h-[512px]"
               style="width:512px"
             />
@@ -29,7 +27,6 @@
               autoplay
               loop
               src="/lotties/next.lottie"
-              :useFrameInterpolation="true"
               class="relative bottom-14 w-[150px] h-[150px] left-48"
             />
         </div>
@@ -39,7 +36,6 @@
               autoplay
               loop
               src="/lotties/animate3.lottie"
-              :useFrameInterpolation="true"
               class="w-[400px] h-[400px]"
             />
         </div>
