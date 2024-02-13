@@ -16,7 +16,7 @@
               class="w-[512px] h-[512px]"
               style="width:512px"
             />
-            <MeSvgComponent class="absolute top-20 left-24"></MeSvgComponent>
+            <MeSvg class="absolute top-20 left-24"></MeSvg>
   
           <div class="relative bottom-14">
             <h1 class="flex flex-col items-center text-6xl shadow_text">
@@ -44,6 +44,7 @@
 
 <script setup>
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
+import MeSvg from './svgs/MeSvg.vue';
 
 const viewport = useViewport();
 </script>
