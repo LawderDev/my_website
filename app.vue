@@ -4,9 +4,7 @@
 
       <Background></Background>  
 
-        <ClientOnly>
-          <NavBar data-aos="fade-down" @toggleChangeMode="changeMode"></NavBar>
-        </ClientOnly>
+          <NavBar @toggleChangeMode="changeMode"></NavBar>
 
         <HomeSection id="home-section"></HomeSection>
     </header>
@@ -20,7 +18,9 @@
       </main>
 
     <footer>
+        <ClientOnly>
           <FooterSection></FooterSection>
+        </ClientOnly>
     </footer>
   </div>
 </template>
