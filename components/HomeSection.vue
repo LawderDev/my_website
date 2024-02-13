@@ -44,29 +44,6 @@
 
 <script setup>
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
-import animate from '~/assets/lotties/animate.lottie';
-import animate2 from '~/assets/lotties/animate2.lottie';
-import animate3 from '~/assets/lotties/animate3.lottie';
-import next from '~/assets/lotties/next.lottie';
-import axios from 'axios';
-
-/*const lottieBuffers = reactive([]);
-
-const getLottieBuffers = async () => {
-  const lottieFiles = await axios.get('../assets/lotties');
-
-  const lotties = await Promise.all(
-    lottieFiles.data.map(async (fileName) => {
-      const filePath = `/assets/lotties/${fileName}`;
-      const response = await axios.get(filePath, { responseType: 'arraybuffer' });
-      return response.data;
-    })
-  );
-
-  return lotties;
-}
-
-lottieBuffers.value = await getLottieBuffers()*/
 
 const viewport = useViewport();
 </script>
