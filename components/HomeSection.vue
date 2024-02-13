@@ -1,7 +1,7 @@
 <template>
     <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
         <div v-if="isDesktop" class="w-[353px] hidden lg:flex" data-aos="slide-left">
-            <canvas ref="lottieAnimate2" class="w-[300px] h-[300px]"></canvas>
+            
         </div>
         <div class="relative" data-aos="fade-up">
           <canvas ref="lottieAnimate" class="w-[512px] h-[512px]"></canvas>
@@ -16,7 +16,7 @@
         </div>
   
         <div v-if="isDesktop" data-aos="slide-right" class="hidden lg:flex">
-          <canvas ref="lottieAnimate3" class="w-[400px] h-[400px] relative"></canvas>
+        
         </div>
       </div>
 </template>
