@@ -20,9 +20,7 @@
       </main>
 
     <footer>
-        <ClientOnly>
           <FooterSection></FooterSection>
-        </ClientOnly>
     </footer>
   </div>
 </template>
