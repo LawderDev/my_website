@@ -1,10 +1,21 @@
 <template>
     <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
         <div v-if="isDesktop" class="w-[353px] hidden lg:flex" data-aos="slide-left">
-            <canvas ref="lottieAnimate2" class="w-[300px] h-[300px]"></canvas>
+            <DotLottieVue
+              autoplay
+              loop
+              class="w-[300] h-[300px]"
+              src="/lotties/animate2.lottie"
+            />
         </div>
         <div class="relative" data-aos="fade-up">
-          <canvas ref="lottieAnimate" class="w-[512px] h-[512px]"></canvas>
+          <DotLottieVue
+              autoplay
+              loop
+              class="w-[512px] h-[512px]"
+              style="width:512px"
+              src="/lotties/animate.lottie"
+            />
           <img src="/me.svg" alt="me" class="absolute top-20 left-24" />
   
           <div class="relative bottom-14">
@@ -12,17 +23,28 @@
               <span class="text-primary">Kenny Ramin,</span> Développeur
             </h1>
           </div>
-          <canvas ref="lottieNext" class="w-[150px] h-[150px] relative bottom-14 left-48"></canvas>
+          <DotLottieVue
+              autoplay
+              loop
+              class="relative bottom-14 w-[150px] h-[150px] left-48"
+              src="/lotties/next.lottie"
+            />
         </div>
   
         <div v-if="isDesktop" data-aos="slide-right" class="hidden lg:flex">
-          <canvas ref="lottieAnimate3" class="w-[400px] h-[400px] relative"></canvas>
+          <DotLottieVue
+              autoplay
+              loop
+              class="w-[400px] h-[400px]"
+              src="/lotties/animate3.lottie"
+            />
         </div>
       </div>
 </template>
 
 <script setup>
-import { DotLottie } from "https://esm.sh/@lottiefiles/dotlottie-web";
+import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
+/*import { DotLottie } from "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js";
 const lottieAnimate = ref(null)
 const lottieAnimate2 = ref(null)
 const lottieAnimate3 = ref(null)
@@ -67,7 +89,7 @@ const initConditionalLotties = () => {
 onMounted(() => {
   initLotties()
   initConditionalLotties()
-})
+})*/
 
 const isDesktop = window.matchMedia('(min-width: 1024px)').matches
 </script>
