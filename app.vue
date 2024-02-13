@@ -11,10 +11,9 @@
 
       <main>
           <ProjectSection id="project-section"></ProjectSection>
-          <ClientOnly>
+
             <AboutSection data-aos="zoom-out-up" id="about-section"></AboutSection>
             <ContactButton data-aos="fade-down" id="contact-section"></ContactButton>
-          </ClientOnly> 
       </main>
 
     <footer>
