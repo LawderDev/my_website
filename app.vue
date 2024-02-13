@@ -4,7 +4,7 @@
 
       <Background></Background>  
 
-        <NavBar data-aos="fade-down" @toggleChangeMode="changeMode"></NavBar>
+        <NavBar @toggleChangeMode="changeMode"></NavBar>
 
         <HomeSection id="home-section"></HomeSection>
     </header>
