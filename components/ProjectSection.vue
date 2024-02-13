@@ -1,15 +1,11 @@
 <template>
   <div class="min-h-screen flex flex-col align-center relative z-1">
-    <ClientOnly>
       <h2 class="text-5xl mt-24 mb-10 text-center shadow_text" data-aos="fade-up">
         Mes <span class="text-primary">Projets</span>
       </h2>
-    </ClientOnly>
-
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center"
     >
-      <ClientOnly>
         <ProjectSectionCard
           v-for="(project, index) in projects"
           :data-aos="getFlipAnimation(index)"
@@ -23,7 +19,6 @@
           @click-on-open-modal="state.isOpen = !state.isOpen"
         >
         </ProjectSectionCard>
-      </ClientOnly>
     </div>
   </div>
 </template>

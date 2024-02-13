@@ -1,6 +1,5 @@
 <template>
     <div class="flex items-center justify-center min-h-screen overflow-clip pt-10 z-1">
-        <ClientOnly> 
           <div v-if="viewport.isGreaterOrEquals('desktop')" class="w-[353px]" data-aos="slide-left">
               <DotLottieVue
                 autoplay
@@ -9,8 +8,6 @@
                 class="w-[300] h-[300px]"
               />
           </div>
-        </ClientOnly>
-        <ClientOnly>
           <div class="relative" data-aos="fade-up">
             <DotLottieVue
                 autoplay
@@ -33,9 +30,7 @@
                 class="relative bottom-14 w-[150px] h-[150px] left-48"
               />
           </div>
-        </ClientOnly>
   
-        <ClientOnly>
           <div v-if="viewport.isGreaterOrEquals('desktop')" data-aos="slide-right">
             <DotLottieVue
                 autoplay
@@ -44,7 +39,6 @@
                 class="w-[400px] h-[400px]"
               />
           </div>
-      </ClientOnly>
       </div>
 </template>
 

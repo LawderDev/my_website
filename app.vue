@@ -4,20 +4,19 @@
 
       <Background></Background>  
 
-        <NavBar @toggleChangeMode="changeMode"></NavBar>
+        <NavBar data-aos="fade-down" @toggleChangeMode="changeMode"></NavBar>
 
         <HomeSection id="home-section"></HomeSection>
     </header>
 
       <main>
           <ProjectSection id="project-section"></ProjectSection>
-
-            <AboutSection data-aos="zoom-out-up" id="about-section"></AboutSection>
-            <ContactButton data-aos="fade-down" id="contact-section"></ContactButton>
+          <AboutSection data-aos="zoom-out-up" id="about-section"></AboutSection>
+          <ContactButton data-aos="fade-down" id="contact-section"></ContactButton>
       </main>
 
     <footer>
-        <FooterSection></FooterSection>
+        <FooterSection data-aos="fade-up" ></FooterSection>
     </footer>
   </div>
 </template>
