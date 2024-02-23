@@ -104,7 +104,7 @@ const cards = [
         specialTitle: true,
         description: `Je suis un passionné d'informatique depuis mon plus jeune âge, c'est pourquoi je me suis orienté vers le métier de développeur.
         
-        J'ai quitté mon île pour étudier, découvrir de nouveaux horizons et avoir de meilleures opportunités professionnelles.`,
+        J'ai quitté mon île pour étudier, découvrir de nouveaux horizons et avoir de nouvelles opportunités professionnelles.`,
       },
     ],
   },
