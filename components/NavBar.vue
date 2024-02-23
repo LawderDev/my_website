@@ -30,13 +30,13 @@
           ></label>
           <ul class="menu p-4 w-80 min-h-full bg-base-200">
             <li>
-              <a href="#" @click="handleLinkClick">Home</a>
+              <a href="#" @click="handleLinkClick">Accueil</a>
             </li>
             <li>
-              <a href="#project-section" @click="handleLinkClick">My project</a>
+              <a href="#project-section" @click="handleLinkClick">Mes réalisations</a>
             </li>
             <li>
-              <a href="#about-section" @click="handleLinkClick">About me</a>
+              <a href="#about-section" @click="handleLinkClick">À propos</a>
             </li>
             <li>
               <a href="#contact-section" @click="handleLinkClick">Contact</a>
