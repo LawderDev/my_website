@@ -6,7 +6,7 @@
         </form>
         <h3 class="font-bold text-xl text-primary">Crédits</h3>
         <ul class="py-4 pl-4 list-disc">
-          <li class="underline" v-for="link in state.links" :key="link"><a class="">link</a></li>
+          <li class="underline" v-for="link in state.links" :key="link"><a :href="link">{{ link }}</a></li>
         </ul>
     </div>
     </dialog>
@@ -20,11 +20,10 @@ const props = defineProps({
 
 const state = reactive({
   links: [
-    "",
-    "",
-    "",
-    "",
-    ""
+    "https://lottiefiles.com/animations/developer-animation-NHbgHzmYNh",
+    "https://lottiefiles.com/animations/coding-NWhbxMOVgP",
+    "https://lottiefiles.com/animations/circle-MUA1zryrGv",
+    "https://codepen.io/tokyoweb/pen/ZjdYVj"
   ],
 });
 
