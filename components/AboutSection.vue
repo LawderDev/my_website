@@ -27,7 +27,7 @@ const cards = [
       {
         title: "Clip-it.io",
         specialTitle: true,
-        description: "Développeur web",
+        description: "Développeur Full Stack",
         date: "2022 - 2024",
         stack: "Vue.js, Django, PostgreSQL, ExtendScript, Node.js, Webflow, Polaris, AWS",
         missions: [
@@ -41,7 +41,7 @@ const cards = [
       {
         title: "Mink Agency",
         specialTitle: true,
-        description: "Développeur web",
+        description: "Développeur Full Stack",
         date: "2021 (2 mois)",
         stack: "Vue.js, Tailwindcss, Laravel",
         missions: [
