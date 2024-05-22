@@ -1,5 +1,5 @@
 <template>
-  <div :data-theme="state.mode" class="font-raleway main-div">
+  <div :data-theme="state.mode" class="font main-div">
     <header>
 
       <Background></Background>  
@@ -37,6 +37,11 @@ const changeMode = () => {
 </script>
 
 <style>
+
+.font {
+  font-family: "Raleway";
+}
+  
 .main-div {
   overflow: hidden;
 }
