@@ -83,13 +83,13 @@ const cards = [
     },
     items: [
       {
-        title: "Video games",
+        title: "Jeux vidéos",
       },
       {
-        title: "Music",
+        title: "Musique",
       },
       {
-        title: "Cooking",
+        title: "Cuisine",
       },
     ],
   },
